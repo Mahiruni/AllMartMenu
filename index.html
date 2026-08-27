@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#FFFEF9" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="Explore the ALL MART restaurant menu — breakfast, pizza, burgers, daily specials, desserts, fresh juices, coffee and more. All listed prices are VAT inclusive." />
+  <meta property="og:title" content="ALL MART — Restaurant Menu" />
+  <meta property="og:description" content="A modern digital menu for ALL MART. Browse dishes, search the menu, and explore chef picks." />
+  <meta property="og:type" content="website" />
+  <title>ALL MART — Restaurant Menu</title>
+
+  <link rel="icon" href="assets/all-mart-logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "ALL MART",
+    "image": "assets/all-mart-logo.svg",
+    "priceRange": "ETB",
+    "servesCuisine": ["Breakfast", "Pizza", "Burgers", "Salads", "Desserts", "Coffee", "Fresh Juice"],
+    "acceptsReservations": false,
+    "hasMenu": {"@type":"Menu","name":"ALL MART Restaurant Menu"}
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#menu">Skip to menu</a>
+
+  <header class="site-header" id="top">
+    <div class="header-shell">
+      <a class="brand-lockup" href="#top" aria-label="ALL MART home">
+        <img src="assets/all-mart-logo.svg" alt="" width="46" height="46" />
+        <span class="brand-wordmark">ALL MART</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#menu" data-nav="breakfast">Breakfast</a>
+        <a href="#menu" data-nav="mains">Mains</a>
+        <a href="#menu" data-nav="pizza">Pizza</a>
+        <a href="#menu" data-nav="desserts">Desserts</a>
+        <a href="#menu" data-nav="drinks">Drinks</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" id="searchToggle" type="button" aria-label="Search menu" aria-expanded="false" aria-controls="globalSearch">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+        </button>
+        <a class="button button-small" href="#menu">View menu</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="header-search" id="globalSearch" hidden>
+      <label for="headerSearchInput">Search ALL MART menu</label>
+      <div class="search-field">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+        <input id="headerSearchInput" type="search" autocomplete="off" placeholder="Try “pizza”, “avocado”, “coffee”…" />
+        <kbd>ESC</kbd>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <div class="mobile-menu-head">
+      <span>Explore ALL MART</span>
+      <button class="icon-button" type="button" id="mobileMenuClose" aria-label="Close navigation">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19M19 5 5 19"/></svg>
+      </button>
+    </div>
+    <nav aria-label="Mobile navigation">
+      <a href="#menu" data-nav="breakfast"><span>01</span>Breakfast</a>
+      <a href="#menu" data-nav="mains"><span>02</span>Mains & specials</a>
+      <a href="#menu" data-nav="pizza"><span>03</span>Pizza & burgers</a>
+      <a href="#menu" data-nav="desserts"><span>04</span>Desserts</a>
+      <a href="#menu" data-nav="drinks"><span>05</span>Drinks</a>
+    </nav>
+    <p>All prices are VAT inclusive.</p>
+  </div>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="ornament ornament-tl" aria-hidden="true"></div>
+      <div class="ornament ornament-br" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Restaurant menu <span></span></p>
+        <h1 id="hero-title">A warm table,<br><em>made for everyone.</em></h1>
+        <p class="hero-lede">From breakfast favorites to pizza, shawarma, fresh juice and coffee — discover the full ALL MART menu in one beautifully simple place.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="button">View full menu <span aria-hidden="true">↘</span></a>
+          <a href="#featured" class="text-link">Discover popular picks <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="vat-pill" role="note">
+          <span class="vat-dot" aria-hidden="true"></span>
+          All prices are VAT inclusive
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="ALL MART brand mark and food photography">
+        <div class="hero-photo hero-photo-main">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=82" alt="A table set with colorful restaurant dishes" fetchpriority="high" />
+        </div>
+        <div class="hero-photo hero-photo-small">
+          <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=700&q=80" alt="Freshly prepared colorful salad" loading="lazy" />
+        </div>
+        <div class="hero-logo-card">
+          <img src="assets/all-mart-logo.svg" alt="ALL MART triangular A logo" width="180" height="180" />
+          <span>ALL MART</span>
+        </div>
+        <span class="hero-script" aria-hidden="true">All Mart</span>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Menu highlights">
+      <div class="marquee-track">
+        <span>Breakfast</span><i>✦</i><span>Fresh Juice</span><i>✦</i><span>Pizza</span><i>✦</i><span>Dessert</span><i>✦</i><span>Coffee</span><i>✦</i><span>Shawarma</span><i>✦</i>
+        <span aria-hidden="true">Breakfast</span><i aria-hidden="true">✦</i><span aria-hidden="true">Fresh Juice</span><i aria-hidden="true">✦</i><span aria-hidden="true">Pizza</span><i aria-hidden="true">✦</i><span aria-hidden="true">Dessert</span><i aria-hidden="true">✦</i><span aria-hidden="true">Coffee</span><i aria-hidden="true">✦</i><span aria-hidden="true">Shawarma</span><i aria-hidden="true">✦</i>
+      </div>
+    </section>
+
+    <section class="featured-section section-shell" id="featured" aria-labelledby="featured-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">Popular at ALL MART</p>
+          <h2 id="featured-title">House favorites,<br><em>served beautifully.</em></h2>
+        </div>
+        <p>Signature dishes selected from the menu — familiar, satisfying and made for repeat visits.</p>
+      </div>
+      <div class="featured-grid" id="featuredGrid"></div>
+    </section>
+
+    <section class="menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="section-shell">
+        <div class="menu-intro reveal">
+          <div>
+            <p class="eyebrow">The complete menu</p>
+            <h2 id="menu-title">Find your<br><em>next favorite.</em></h2>
+          </div>
+          <div class="menu-intro-copy">
+            <p>Browse every category from the supplied ALL MART menu. Search by dish or ingredient, then filter by section.</p>
+            <p class="menu-count" id="menuCount" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <div class="menu-tools reveal">
+          <div class="menu-search-wrap">
+            <label for="menuSearch" class="sr-only">Search menu</label>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+            <input id="menuSearch" type="search" autocomplete="off" placeholder="Search dishes or ingredients" />
+            <button id="clearSearch" type="button" hidden>Clear</button>
+          </div>
+          <div class="category-scroll" id="categoryFilters" role="toolbar" aria-label="Menu categories"></div>
+        </div>
+      </div>
+
+      <div class="section-shell menu-layout">
+        <aside class="menu-index" aria-label="Menu section index">
+          <p>Menu index</p>
+          <nav id="menuIndex"></nav>
+        </aside>
+        <div class="menu-content" id="menuContent"></div>
+      </div>
+
+      <div class="section-shell no-results" id="noResults" hidden>
+        <div class="no-results-mark">A</div>
+        <h3>No dishes found</h3>
+        <p>Try a different dish, ingredient or category.</p>
+        <button class="button" id="resetFilters" type="button">Reset menu</button>
+      </div>
+    </section>
+
+    <section class="story-section" aria-label="ALL MART brand statement">
+      <div class="section-shell story-grid">
+        <div class="story-image reveal">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=82" alt="A warmly lit restaurant table prepared for guests" loading="lazy" />
+          <span class="photo-label">Made to share</span>
+        </div>
+        <div class="story-copy reveal">
+          <p class="eyebrow">ALL MART hospitality</p>
+          <h2>Good food should feel<br><em>effortless.</em></h2>
+          <p>Our digital menu keeps the character of the original printed menu — warm gold details, the unmistakable orange mark and straightforward prices — while making every choice easier to discover on any screen.</p>
+          <div class="story-stats">
+            <div><strong id="dishStat">80+</strong><span>menu choices</span></div>
+            <div><strong id="sectionStat">11</strong><span>menu sections</span></div>
+            <div><strong>100%</strong><span>VAT inclusive</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section section-shell" aria-labelledby="closing-title">
+      <div class="closing-card reveal">
+        <div class="ornament ornament-tl" aria-hidden="true"></div>
+        <div class="ornament ornament-br" aria-hidden="true"></div>
+        <img src="assets/all-mart-logo.svg" alt="" width="92" height="92" />
+        <p class="eyebrow">Thank you</p>
+        <h2 id="closing-title">Come hungry.<br><em>Leave happy.</em></h2>
+        <p>We look forward to welcoming you to ALL MART.</p>
+        <a class="button" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-grid">
+      <div class="footer-brand">
+        <a class="brand-lockup" href="#top" aria-label="ALL MART home">
+          <img src="assets/all-mart-logo.svg" alt="" width="54" height="54" />
+          <span class="brand-wordmark">ALL MART</span>
+        </a>
+        <p>Restaurant menu · Ethiopia</p>
+      </div>
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <a href="#featured">Popular picks</a>
+        <a href="#menu">Full menu</a>
+        <button type="button" id="printMenu">Print menu</button>
+      </div>
+      <div class="footer-col">
+        <h3>Menu notes</h3>
+        <p>All listed prices are in ETB and VAT inclusive.</p>
+        <p>Availability may vary by day.</p>
+      </div>
+      <div class="footer-col footer-thanks">
+        <p>Thank you for choosing</p>
+        <strong>ALL MART</strong>
+      </div>
+    </div>
+    <div class="section-shell footer-bottom">
+      <span>© <span id="year"></span> ALL MART</span>
+      <span>Designed for clarity, speed & accessibility.</span>
+    </div>
+  </footer>
+
+  <nav class="mobile-bottom-nav" aria-label="Quick navigation">
+    <a href="#top" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 3l9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1Z"/></svg><span>Home</span></a>
+    <a href="#menu" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14M5 10h14M5 16h8"/></svg><span>Menu</span></a>
+    <a href="#featured" aria-label="Popular"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9Z"/></svg><span>Popular</span></a>
+    <button type="button" id="mobileSearch" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg><span>Search</span></button>
+  </nav>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6"/></svg>
+  </button>
+
+  <script src="menu-data.js"></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
