@@ -11,10 +11,12 @@
   <meta property="og:type" content="website" />
   <title>ALL MART — Restaurant Menu</title>
 
+  <script>document.documentElement.classList.add('splash-active');</script>
   <link rel="icon" href="assets/all-mart-logo.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="slider.css" />
+  <link rel="stylesheet" href="startup.css" />
 
   <script type="application/ld+json">
   {
@@ -30,6 +32,18 @@
   </script>
 </head>
 <body>
+  <div class="brand-intro" id="brandIntro" role="status" aria-label="Opening ALL MART restaurant menu">
+    <div class="brand-intro-inner">
+      <div class="brand-intro-mark-wrap">
+        <span class="brand-intro-ring" aria-hidden="true"></span>
+        <img class="brand-intro-logo" src="assets/all-mart-logo.svg" alt="ALL MART" width="174" height="174" />
+      </div>
+      <p class="brand-intro-eyebrow">Restaurant Menu</p>
+      <p class="brand-intro-name">ALL <em>MART</em></p>
+      <div class="brand-intro-loader" aria-hidden="true"><span></span></div>
+    </div>
+  </div>
+
   <a class="skip-link" href="#menu">Skip to menu</a>
 
   <header class="site-header" id="top">
@@ -234,7 +248,7 @@
     </div>
     <div class="section-shell footer-bottom">
       <span>© <span id="year"></span> ALL MART</span>
-      <span>Designed for clarity, speed & accessibility.</span>
+      <span class="powered-by">Powered by <a href="https://www.hisabtechnologies.com" target="_blank" rel="noopener noreferrer">Hisab Technologies</a></span>
     </div>
   </footer>
 
@@ -252,5 +266,6 @@
   <script src="menu-data.js"></script>
   <script src="app.js" defer></script>
   <script src="slider.js" defer></script>
+  <script src="startup.js" defer></script>
 </body>
 </html>
