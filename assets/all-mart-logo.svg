@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">ALL MART logo</title>
+  <desc id="desc">Rounded right-pointing orange triangle with a gray border and a bold white letter A.</desc>
+  <path d="M42 24C27 16 14 28 17 45l31 165c3 18 20 25 34 15l151-82c17-9 17-29 0-38L42 24Z" fill="#F5A623" stroke="#6B6B6B" stroke-width="18" stroke-linejoin="round"/>
+  <path d="M78 185 112 70c3-10 17-11 22-2l54 88c4 7-1 16-9 16h-24c-4 0-8-2-10-6l-7-13H99l-7 25c-2 7-8 12-15 12h-1c-8 0-13-3-11-5Zm31-66h13l-8-15-5 15Z" fill="#fff" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
